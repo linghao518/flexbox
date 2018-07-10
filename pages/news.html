@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Complex flexbox example</title>
+    <title>Flexbox News Layout</title>
     <style>
       html {
         background: mediumseagreen;
@@ -11,28 +11,35 @@
         margin: 0;
         padding: 0;
       }
+
       body {
         margin: 0;
         padding: 0;
       }
+
       figure {
         margin: 0;
         padding: 0;
       }
+
       a {
         color: #555;
         text-decoration: none;
       }
+
       .column {
         flex: 1;
         flex-direction: column;
       }
+
       .main-column {
         flex: 2;
       }
+
       .nested-column {
         flex: 2;
       }
+
       .article {
         background: #fff;
         display: flex;
@@ -41,26 +48,32 @@
         flex: 1;
         flex-basis: auto;
       }
+
       .article-body {
         display: flex;
         flex-direction: column;
         flex: 1;
         padding: 20px;
       }
+
       .article-image {
         width: 100%;
         padding-top: 75%;
         position: relative;
       }
+
       .article-image.is-16by9 {
         padding-top: 66.666%;
       }
+
       .article-image.is-16by9 {
         padding-top: 56.25%;
       }
+
       .article-image.is-3by2 {
         padding-top: 66.666%;
       }
+
       .article-image img {
         position: absolute;
         width: 100%;
@@ -68,12 +81,15 @@
         top: 0;
         left: 0;
       }
+
       .article-title {
         margin: 0;
       }
+
       .article-content {
         flex: 1;
       }
+
       .article-info {
         display: flex;
         justify-content: space-between;
@@ -93,14 +109,16 @@
       <section class="column main-column">
         <a class="article first-article" href="#">
           <figure class="article-image is-4by3">
-            <img src="https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/1366/posts/26611/attachment/image-01.png" alt="">
+            <img src="https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/1366/posts/26611/attachment/image-01.png"
+                 alt="">
           </figure>
           <div class="article-body">
             <h2 class="article-title">
               Hello World
             </h2>
             <p class="article-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor
+              vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros.
             </p>
             <footer class="article-info">
@@ -114,15 +132,18 @@
           <div class="column nested-column">
             <a class="article" href="#">
               <figure class="article-image is-16by9">
-                <img src="https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/1366/posts/26611/attachment/image-02.png" alt="">
+                <img src="https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/1366/posts/26611/attachment/image-02.png"
+                     alt="">
               </figure>
               <div class="article-body">
                 <h2 class="article-title">
                   Hello World
                 </h2>
                 <p class="article-content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor
+                  vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor
+                  vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
                 </p>
                 <footer class="article-info">
                   <span>By Joe Smith</span>
@@ -135,7 +156,8 @@
           <div class="column">
             <a class="article" href="#">
               <figure class="article-image is-16by9">
-                <img src="https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/1366/posts/26611/attachment/image-03.png" alt="">
+                <img src="https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/1366/posts/26611/attachment/image-03.png"
+                     alt="">
               </figure>
               <div class="article-body">
                 <h2 class="article-title">
@@ -185,7 +207,8 @@
       <section class="column">
         <a class="article" href="#">
           <figure class="article-image is-3by2">
-            <img src="https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/1366/posts/26611/attachment/image-04.png" alt="">
+            <img src="https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/1366/posts/26611/attachment/image-04.png"
+                 alt="">
           </figure>
           <div class="article-body">
             <h2 class="article-title">
